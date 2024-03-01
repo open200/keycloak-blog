@@ -11,9 +11,8 @@ FROM quay.io/keycloak/keycloak:${KC_VERSION} AS builder
 COPY --from=mavenbuilder /usr/src/app/spi/target/*.jar /opt/keycloak/providers
 ENV KC_HEALTH_ENABLED=true \
     KC_METRICS_ENABLED=true \
-    KC_DB=postgres \
     KC_PROXY=edge
-#COPY themes/custom /opt/keycloak/themes/custom
+COPY themes/kc-blog-custom /opt/keycloak/themes/kc-blog-custom
 WORKDIR /opt/keycloak
 RUN /opt/keycloak/bin/kc.sh build
 
