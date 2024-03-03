@@ -12,7 +12,7 @@ COPY --from=mavenbuilder /usr/src/app/spi/target/*.jar /opt/keycloak/providers
 ENV KC_HEALTH_ENABLED=true \
     KC_METRICS_ENABLED=true \
     KC_PROXY=edge
-COPY themes/kc-blog-custom /opt/keycloak/themes/kc-blog-custom
+COPY themes/my-custom-theme /opt/keycloak/themes/my-custom-theme
 WORKDIR /opt/keycloak
 RUN /opt/keycloak/bin/kc.sh build
 

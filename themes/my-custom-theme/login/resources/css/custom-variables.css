@@ -1,0 +1,29 @@
+:root {
+  --border-radius-lg: 16px;
+  --border-radius-md: calc(var(--border-radius-lg) / 2);
+  --border-radius-sm: calc(var(--border-radius-md) / 2);
+
+  /* hsl used here */
+  --primary-color: hsl(212, 83%, 28%);
+  --primary-h: 212;
+  --primary-s: 83%;
+  --primary-l: 28%;
+
+  --primary-light: hsl(
+    var(--primary-h),
+    var(--primary-s),
+    calc(var(--primary-l) + 50%)
+  );
+
+  --primary-dark: hsl(
+    var(--primary-h),
+    var(--primary-s),
+    calc(var(--primary-l) - 10%)
+  );
+
+  --grey-100: hsl(0, 0%, 98%);
+  --grey-200: hsl(0, 0%, 85%);
+  --grey-300: hsl(0, 0%, 70%);
+  --grey-400: hsl(0, 0%, 55%);
+  --pf-global--primary-color--100: var(--primary-color);
+}
