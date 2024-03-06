@@ -1,5 +1,5 @@
 # Set global variables
-ARG KC_VERSION=23.0.7
+ARG KC_VERSION=24.0.1
 
 # Stage 1: Maven Build
 FROM maven:3.9.6-eclipse-temurin-21-alpine AS mavenbuilder
