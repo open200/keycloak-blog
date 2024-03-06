@@ -39,6 +39,7 @@ docker build -t keycloak-blog .
 docker run -p 8080:8080 \
 -e KEYCLOAK_ADMIN=admin \
 -e KEYCLOAK_ADMIN_PASSWORD=admin \
+-v ./volume:/opt/keycloak/properties \
 keycloak-blog:latest \
 start-dev
 ```
