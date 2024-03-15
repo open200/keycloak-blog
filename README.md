@@ -59,7 +59,7 @@ For an in-depth explanation of how we built this custom Keycloak Docker image,
 including the rationale behind using Docker's multistage build feature, 
 the process of incorporating custom SPIs and themes, 
 and a step-by-step guide through the Dockerfile, 
-check out our blog post: ["Leveraging Docker Multistage Builds for Custom Keycloak SPIs"](https://github.com/open200/keycloak-blog). 
+check out our blog post: ["Leveraging Docker Multistage Builds for Custom Keycloak SPIs"](https://open200.com/de/blog/docker-multistage-builds-keycloak-spi/). 
 This post provides valuable insights into the project's background, 
 the challenges we faced, and how we overcame them to create a lean and secure 
 Keycloak image tailored to our specific needs.
