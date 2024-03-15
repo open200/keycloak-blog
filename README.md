@@ -53,6 +53,17 @@ This project includes an example SPI implementation and a custom theme.
 The SPI is based on the readonly-property-file provider, allowing authentication 
 against a predefined set of users. The custom theme modifies the appearance of the Keycloak login page.
 
+## Documentation
+
+For an in-depth explanation of how we built this custom Keycloak Docker image, 
+including the rationale behind using Docker's multistage build feature, 
+the process of incorporating custom SPIs and themes, 
+and a step-by-step guide through the Dockerfile, 
+check out our blog post: ["Leveraging Docker Multistage Builds for Custom Keycloak SPIs"](https://github.com/open200/keycloak-blog). 
+This post provides valuable insights into the project's background, 
+the challenges we faced, and how we overcame them to create a lean and secure 
+Keycloak image tailored to our specific needs.
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
